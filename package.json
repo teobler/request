@@ -1,0 +1,48 @@
+{
+  "name": "@openapi-integration/request",
+  "version": "0.0.1",
+  "description": "a bunch of hooks methods for React to integration API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teobler/request.git"
+  },
+  "keywords": [
+    "hooks",
+    "request",
+    "api-integration"
+  ],
+  "author": "teobler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teobler/request/issues"
+  },
+  "homepage": "https://github.com/teobler/request#readme",
+  "peerDependencies": {
+    "lodash": ">=4.17.x",
+    "react": ">=16.9.x",
+    "redux": ">=4.0.x",
+    "rxjs": ">=6.5.x"
+  },
+  "devDependencies": {
+    "@types/prettier": "^1.19.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "@types/lodash": "4.14.138",
+    "@types/react": "16.9.25",
+    "axios-mock-adapter": "1.17.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "prettier": "^2.0.2"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3",
+    "axios": "^0.19.2"
+  }
+}
