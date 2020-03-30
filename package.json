@@ -70,7 +70,8 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
-      "!**/__tests__/**"
+      "!**/__tests__/**",
+      "!src/actions.ts"
     ],
     "coverageThreshold": {
       "global": {

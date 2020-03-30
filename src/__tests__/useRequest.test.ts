@@ -1,13 +1,8 @@
 import { renderHook } from "@testing-library/react-hooks";
-import React from "react";
 import { Subject } from "rxjs/internal/Subject";
 import { useRequest } from "../useRequest";
 import { createRequestAction } from "../requestActionCreators";
-import { StoreContext } from "src/useDispatch";
-
-const getWrapper = (store: any) => ({ children }: any) => (
-  <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
-);
+import { getWrapper } from "./utils/getWarpper";
 
 const testActionCreator = createRequestAction<{ id?: string }, ITestVo>("getTestDataUsingGet", ({ id }) => ({
   url: `/api/tests/${id}`,

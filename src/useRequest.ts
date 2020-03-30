@@ -3,9 +3,9 @@ import { BehaviorSubject, merge, Subject } from "rxjs";
 import { isRequestFailedAction, isRequestSuccessAction } from "./requestActionCreators";
 import { AnyAction } from "redux";
 import { filter, tap } from "rxjs/operators";
-import { useDispatch } from "./useDispatch";
 import { isEqual } from "lodash";
 import { IRequestActionCreator, IRequestCallbacks, IRequestFailedAction, IRequestSuccessAction } from "./types";
+import { useDispatch } from "./hooks/useDispatch";
 
 interface IUseRequestOptions<T> extends IRequestCallbacks<T> {
   ignorePayload?: boolean;
